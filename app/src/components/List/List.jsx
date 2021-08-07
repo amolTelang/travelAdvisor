@@ -3,22 +3,11 @@ import { CircularProgress,Grid,Typography,InputLabel,MenuItem,FormControl,Select
 import PlaceDetails from '../../components/PlaceDetails/PlaceDetails';
 
 import useStyles from './styles'
-const List=()=>{
+const List=({places})=>{
   const classes=useStyles();
   const [type,setType]=useState('restraunts');
   const [rating,setRating]=useState('')
 
-  const places=[
-    {name:'cool place'},
-    {name:'steak house'},
-    {name:'Best Steak'},
-    {name:'cool place'},
-    {name:'steak house'},
-    {name:'Best Steak'},
-    {name:'cool place'},
-    {name:'steak house'},
-    {name:'Best Steak'},
-  ];
     return(
       <div className={classes.container}>
         <Typography variant="h4">
